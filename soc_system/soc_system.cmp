@@ -1,0 +1,12 @@
+	component soc_system is
+		port (
+			clk_clk     : in    std_logic                    := 'X';             -- clk
+			tester_ack  : in    std_logic_vector(3 downto 0) := (others => 'X'); -- ack
+			tester_r_wn : in    std_logic                    := 'X';             -- r_wn
+			tester_int  : out   std_logic_vector(3 downto 0);                    -- int
+			tester_data : inout std_logic_vector(6 downto 0) := (others => 'X'); -- data
+			serial_rxd  : in    std_logic                    := 'X';             -- rxd
+			serial_txd  : out   std_logic                                        -- txd
+		);
+	end component soc_system;
+

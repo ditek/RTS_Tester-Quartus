@@ -1,0 +1,77 @@
+MIF/HEX Update report for soc_system
+Thu Jul 09 19:13:46 2015
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Thu Jul 09 19:13:46 2015 ;
+; Revision Name         ; soc_system                            ;
+; Top-level Entity Name ; soc_system                            ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE15E22C8                          ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                          ;
++---------------------------------------------------------------------------------------------------------+
+; File Name                                                                                               ;
++---------------------------------------------------------------------------------------------------------+
+; C:/Users/diaaj/Documents/Quartus/soc_system_RT_CIV/software/SocNios/mem_init/soc_system_cpu_memory.hex  ;
+; C:/Users/diaaj/Documents/Quartus/soc_system_RT_CIV/software/SocNios/mem_init/soc_system_data_memory.hex ;
++---------------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+    Info: Processing started: Thu Jul 09 19:13:43 2015
+Info: Command: quartus_cdb soc_system -c soc_system --update_mif
+Warning (39023): Can't find Memory Initialization File soc_system_nios2_qsys_0_rf_ram_a.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File soc_system_nios2_qsys_0_rf_ram_b.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File soc_system_nios2_qsys_0_ociram_default_contents.mif -- skipped updates for this file
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/diaaj/Documents/Quartus/soc_system_RT_CIV/software/SocNios/mem_init/soc_system_cpu_memory.hex
+    Info (39025): Processed Memory Initialization File C:/Users/diaaj/Documents/Quartus/soc_system_RT_CIV/software/SocNios/mem_init/soc_system_data_memory.hex
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 536 megabytes
+    Info: Processing ended: Thu Jul 09 19:13:46 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

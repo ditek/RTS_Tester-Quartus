@@ -74,3 +74,16 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# User Specific
+*.bak
+*.txt
+*.html
+new_rtl_netlist
+old_rtl_netlist
+
+/db
+/incremental_db
+/soc_system/synthesis
+/software/soc_system_RT_CIV-workspace/.metadata/.plugins/org.eclipse.core.resources/.history
+

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jul 09 19:14:30 2015
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
+Revision Name : soc_system
+Top-level Entity Name : soc_system
+Family : Cyclone IV E
+Device : EP4CE15E22C8
+Timing Models : Final
+Total logic elements : 4,301 / 15,408 ( 28 % )
+    Total combinational functions : 3,912 / 15,408 ( 25 % )
+    Dedicated logic registers : 2,502 / 15,408 ( 16 % )
+Total registers : 2502
+Total pins : 23 / 82 ( 28 % )
+Total virtual pins : 0
+Total memory bits : 306,176 / 516,096 ( 59 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

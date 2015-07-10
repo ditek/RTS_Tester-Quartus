@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/soc_system_cpu_memory.dat" type="DAT" initParamName="INIT_FILE" memoryPath="cpu_memory" />
+<file path="hdl_sim/soc_system_data_memory.dat" type="DAT" initParamName="INIT_FILE" memoryPath="data_memory" />
+<file path="soc_system_cpu_memory.hex" type="HEX" initParamName="INIT_FILE" memoryPath="cpu_memory" />
+<file path="soc_system_data_memory.hex" type="HEX" initParamName="INIT_FILE" memoryPath="data_memory" />
+</simPackage>
