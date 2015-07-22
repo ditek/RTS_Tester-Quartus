@@ -341,6 +341,7 @@
 <definedSymbol symbol="__thiscall=__attribute__((__thiscall__))"/>
 <definedSymbol symbol="_thiscall=__attribute__((__thiscall__))"/>
 <definedSymbol symbol="__DECIMAL_BID_FORMAT__=1"/>
+<definedSymbol symbol="ALTERA_AVALON_UART_SMALL=1"/>
 </collector>
 </instance>
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1728140355;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1728140355.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.417419811;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1972449214">
@@ -664,6 +665,7 @@
 <definedSymbol symbol="__thiscall=__attribute__((__thiscall__))"/>
 <definedSymbol symbol="_thiscall=__attribute__((__thiscall__))"/>
 <definedSymbol symbol="__DECIMAL_BID_FORMAT__=1"/>
+<definedSymbol symbol="ALTERA_AVALON_UART_SMALL=1"/>
 </collector>
 </instance>
 </scannerInfo>

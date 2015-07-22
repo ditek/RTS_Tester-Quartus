@@ -79,6 +79,7 @@ $RECYCLE.BIN/
 *.bak
 *.txt
 *.html
+*.log
 new_rtl_netlist
 old_rtl_netlist
 

@@ -34,25 +34,48 @@
 //Platform clock in MHz
 #define F_CLK			50
 
-//Time scaler, multiplies the clock period TIME_SCALER-times, [2, R>, 0 disables, 1 has no effect
-#define TIME_SCALER		3
+//Remote configuration activation
+#define REMOTE_CONFIG 	1
 
-//Specify the test duration ms
-#define TEST_DURATION 	10
+#if REMOTE_CONFIG == 0
+	//Time scaler, multiplies the clock period TIME_SCALER-times, [2, R>, 0 disables, 1 has no effect
+	#define TIME_SCALER		3
+	#if TIME_SCALER == 0
+		#define TIME_SCALER 1
+	#endif
+	//Specify the test duration ms
+	#define TEST_DURATION 	10
 
-//Time the tester will hold the data in ns after initiating an interrupt
-#define HOLD_TIME		1
+	//Time the tester will hold the data in ns after initiating an interrupt
+	#define HOLD_TIME		1
 
-//Writing to memory using BURST, undefining will use normal writing
-#define BURST_WRITE 	1
+	//Writing to memory using BURST, undefining will use normal writing
+	#define BURST_WRITE 	1
 
-//specify a period in us (microseconds), 0 or undef disables the int
-#define INT_A_PERIOD	10    //us
-#define INT_B_PERIOD 	10
-#define INT_C_PERIOD	10
-#define INT_D_PERIOD	10
+	//specify a period in us (microseconds), 0 or undef disables the int
+	#define INT_A_PERIOD	10    //us
+	#define INT_B_PERIOD 	10
+	#define INT_C_PERIOD	10
+	#define INT_D_PERIOD	10
+#else
+	//Time scaler, multiplies the clock period TIME_SCALER-times, [2, R>, 0 disables, 1 has no effect
+	int TIME_SCALER = 3;
 
+	//Specify the test duration ms
+	int TEST_DURATION = 10;
 
+	//Time the tester will hold the data in ns after initiating an interrupt
+	int HOLD_TIME = 1;
+
+	//Writing to memory using BURST, undefining will use normal writing
+	int BURST_WRITE = 1;
+
+	//specify a period in us (microseconds), 0 or undef disables the int
+	int INT_A_PERIOD = 10;    //us
+	int INT_B_PERIOD = 10;    //us
+	int INT_C_PERIOD = 10;    //us
+	int INT_D_PERIOD = 10;    //us
+#endif
 
 #endif /* _test_config__H */
 

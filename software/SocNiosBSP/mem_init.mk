@@ -111,7 +111,6 @@ mem_start_address = $($(target_stem)_START)
 mem_end_address = $($(target_stem)_END)
 mem_span = $($(target_stem)_SPAN)
 mem_width = $($(target_stem)_WIDTH)
-mem_record = $(shell echo $(mem_width)\/8 | bc)
 mem_endianness = $($(target_stem)_ENDIANNESS)
 mem_create_lanes = $($(target_stem)_CREATE_LANES)
 
@@ -290,7 +289,7 @@ $(foreach i,0 1 2 3 4 5 6 7,%_lane$(i).dat): %.dat
 $(HEX_FILES): %.hex: $(ELF)
 	$(post-process-info)
 	@$(MKDIR) $(@D)
-	bash -c '$(ELF2HEX) $< $(mem_start_address) $(mem_end_address) --width=$(mem_width) --record=$(mem_record)\
+	bash -c '$(ELF2HEX) $< $(mem_start_address) $(mem_end_address) --width=$(mem_width) \
 		$(mem_endianness) --create-lanes=$(mem_create_lanes) $(elf2hex_extra_args) $@'
 
 $(SYM_FILES): %.sym: $(ELF)

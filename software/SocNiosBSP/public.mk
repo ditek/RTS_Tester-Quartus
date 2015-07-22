@@ -160,6 +160,13 @@ ELF_PATCH_FLAG  += --sidp 0x10000
 SOPC_SYSID_FLAG += --timestamp=1435681225
 ELF_PATCH_FLAG  += --timestamp 1435681225
 
+# Enable JTAG UART driver to recover when host is inactive causing buffer to 
+# full without returning error. Printf will not fail with this recovery. none 
+# setting altera_avalon_jtag_uart_driver.enable_jtag_uart_ignore_fifo_full_error is false
+
+# Small-footprint (polled mode) driver none 
+# setting altera_avalon_jtag_uart_driver.enable_small_driver is true
+
 # Enable driver ioctl() support. This feature is not compatible with the 
 # 'small' driver; ioctl() support will not be compiled if either the UART 
 # 'enable_small_driver' or HAL 'enable_reduced_device_drivers' settings are 
@@ -356,6 +363,12 @@ ALT_INCLUDE_DIRS += $(ALT_LIBRARY_ROOT_DIR)/HAL/inc
 #------------------------------------------------------------------------------
 
 ALT_CPPFLAGS += -DALT_SINGLE_THREADED
+
+#------------------------------------------------------------------------------
+#        SOFTWARE COMPONENT & DRIVER SETTING-PRODUCED DEFINITIONS
+#------------------------------------------------------------------------------
+
+ALT_CPPFLAGS += -DALTERA_AVALON_JTAG_UART_SMALL
 
 #END MANAGED
 
